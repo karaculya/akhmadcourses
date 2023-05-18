@@ -1,89 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akhmad Courses</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
 
+<body>
+    <div class="container-fluid">
         <header>
-            <nav class="navbar fixed-top bg-body-tertiary g-0">
+            <nav class="navbar sticky-top bg-white g-0">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="images/open_menu.svg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                        <img src="images/open_menu.svg" alt="Logo" width="60" height="60"
+                            class="d-inline-block align-text-top">
                     </a>
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.svg" alt="Logo" width="60" class="d-inline-block align-text-top">
-                        Akhmad courses
+                    <a class="navbar-brand text-uppercase" href="index.html">
+                        <img src="images/logo.svg" alt="Logo" width="60" class="col mx-auto d-block">
+                        <h1 class="col special-text">Akhmad courses</h1>
                     </a>
-                    <a class="navbar-brand" href="#">
-                        <img src="images/profile.svg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="personal-cabinet.html">
+                        <img src="images/profile.svg" alt="Logo" width="60" height="60"
+                            class="d-inline-block align-text-top">
                     </a>
                 </div>
             </nav>
         </header>
-        
-        
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/slide-2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/slide-3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <form class="d-flex mx-auto p-5" role="search">
-                <input class="form-control me-1 search input-search" type="search" placeholder="ИСКАТЬ" aria-label="Search">
-                <button class="btn btn-outline-success search btn-search" type="submit">НАЙТИ</button>
-              </form>
+        <!-- слайдер -->
+        <section>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </nav>
+        </section>
 
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+        <!-- поиск -->
+        <section>
+            <div class="navbar">
+                <div class="container-fluid">
+                    <form class="d-flex mx-auto p-5" role="search">
+                        <input class="form-control me-1 text-uppercase search input-search" type="search"
+                            placeholder="Искать" aria-label="Search">
+                        <button class="btn btn-outline-success text-uppercase search btn-search"
+                            type="submit">Найти</button>
+                    </form>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> 
+        </section>
 
+        <!-- слайдер с курсами -->
+        <section class="our-courses-block">
+            <h1 class="text-white text-center p-3 title">Наши курсы</h1>
+            <div id="carouselExample" class="carousel slide mb-5 p-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-auto course pis">
+                            <div class="card-body text-white text-center title">
+                                Проектирование
+                                информационных
+                                систем
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto course pmk">
+                            <div class="card-body text-white text-center title">
+                                Проектирование
+                                мультимедийного
+                                контента
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto course ad">
+                            <div class="card-body text-white text-center title">
+                                Анализ данных
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- блок описания -->
+        <section>
+            <div class="container-fluid overflow-hidden text-center p-3 description-block">
+                <h1 class="title mb-5">Почему выбирают Akhmad Courses</h1>
+                <div class="row gy-5 d-flex justify-content-center">
+                    <div class="col-5 text-block">
+                        <div class="text-white p-3">
+                            Наш сайт предлагает удобную и эффективную платформу для обучения онлайн.
+                            Мы предоставляем доступ к широкому спектру электронных курсов, которые позволяют нашим
+                            пользователям изучать различные предметы и улучшать свои профессиональные навыки.
+                        </div>
+                    </div>
+                    <div class="col-5 text-block">
+                        <div class="text-white p-3">
+                            Мы уверены, что наша платформа может быть полезной для людей, которые хотят улучшить свои
+                            навыки и знания.
+                            Мы создали удобную и эффективную платформу, которая позволяет получать высококачественное
+                            обучение онлайн.
+                        </div>
+                    </div>
+                    <div class="col-5 text-block">
+                        <div class="text-white p-3">
+                            Наши курсы разработаны ведущими специалистами, что гарантирует высокое качество
+                            представленного материала.
+                            Мы предлагаем курсы по многим различным темам. Наши курсы подходят для людей разных
+                            возрастов и уровней профессиональной подготовки.
+                        </div>
+                    </div>
+                    <div class="col-5 text-block">
+                        <div class="text-white p-3">
+                            Мы также предлагаем возможность создания собственных курсов для наших пользователей.
+                            Это позволяет преподавателям и экспертам размещать свои курсы на нашей платформе и делиться
+                            своими знаниями и опытом с другими.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav class="navbar sticky-bottom justify-content-center">
+                <div class="container-fluid">
+                    <div class="p-3">© Akhmad Courses, 2023</div>
+                    <div class="subtitle">г.Самара, ул. Аксакова, 21</div>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="images/phone.svg" width="50" height="50" alt="phone">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="images/email.svg" width="50" height="50" alt="email">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="images/telegram.svg" width="50" height="50" alt="telegram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
