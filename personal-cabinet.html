@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/svg">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <header>
+            <nav class="navbar sticky-top bg-white g-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/open_menu.svg" alt="Logo" width="60" height="60"
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <a class="navbar-brand text-uppercase" href="index.html">
+                        <img src="images/logo.svg" alt="Logo" width="60" class="col mx-auto d-block">
+                        <h1 class="col special-text">Akhmad courses</h1>
+                    </a>
+                    <a class="navbar-brand" href="personal-cabinet.html">
+                        <img src="images/profile.svg" alt="Logo" width="60" height="60"
+                            class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- блок информации о пользователе -->
+        <section class="mt-5 mb-5">
+            <h1 class="title text-black ms-5 mb-1">Подробная информация о пользователе</h1>
+            <div class="container-fluid overflow-hidden text-start ms-5 rectangle personal-info-block">
+                <div class="row gy-5 d-flex mx-auto my-auto">
+                    <div class="col-5 my-auto info-about-user">
+                        <h4 class="subtitle">ФИО:</h4>
+                        <p>Ахмадуллина Карина Ренатовна</p>
+                        <h4 class="subtitle">Адрес электронной почты:</h4>
+                        <p>karina-akhmadullina@mail.ru</p>
+                        <h4 class="subtitle">Группа (студента):</h4>
+                        <p>БИ31</p>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="button" class="btn btn-primary text-uppercase">редактировать</button>
+                        <a href="login.html" class="btn btn-light text-uppercase">выйти из учетной записи</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- блок доступных курсов -->
+        <section class="mb-5">
+            <h1 class="title text-black ms-5 mb-1">Доступные курсы</h1>
+            <div class="container-fluid overflow-hidden text-center ms-5 rectangle accessible-courses-block">
+                <div class="row gy-5 d-flex justify-content-center">
+                    <a href="course.html" class="card mx-auto course pis">
+                        <div class="card-body text-white text-center p-4 title">
+                            Проектирование информационных систем
+                        </div>
+                    </a>
+                    <div class="row gy-3 d-flex justify-content-center">
+                        <a href="course.html" class="btn btn-orange btn-lg text-uppercase">Начать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- блок результатов -->
+        <section class="mb-5">
+            <h1 class="title text-black ms-5 mb-1">Результаты за пройденные курсы:</h1>
+            <div class="container-fluid overflow-hidden text-center ms-5 rectangle results-block">
+                <div class="row label">
+                    <div class="col-6">
+                        <p class="text-start text-uppercase">Название курса</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="text-start text-uppercase">Оценка</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-start text-uppercase">Результат</p>
+                    </div>
+                </div>
+                <div class="row line mb-2">
+                    <div class="col-5">
+                        <p class="text-start subtitle">Общая теория систем</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-center subtitle">5</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-start">Результат</p>
+                    </div>
+                </div>
+                <div class="row line mb-2">
+                    <div class="col-5">
+                        <p class="text-start subtitle">Аппаратное обеспечение и телекоммуникации</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-center subtitle">4</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-start">Результат</p>
+                    </div>
+                </div>
+                <div class="row line mb-2">
+                    <div class="col-5">
+                        <p class="text-start subtitle">Проектирование мультимедийного контента</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-center subtitle">4</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-start">Результат</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav class="navbar sticky-bottom justify-content-center">
+                <div class="container-fluid">
+                    <div class="p-3">© Akhmad Courses, 2023</div>
+                    <div class="p-3">г.Самара, ул. Аксакова, 21</div>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="tel:88462664000">
+                                <img src="images/phone.svg" width="50" height="50" alt="phone">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="mailto:imi@imi-samara.ru">
+                                <img src="images/email.svg" width="50" height="50" alt="email">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="images/telegram.svg" width="50" height="50" alt="telegram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

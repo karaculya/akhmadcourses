@@ -1,23 +1,256 @@
-:root{
-    --orange: #DC5634;
-    --gray: #BBBBBB;
-    --wild-blue: #A5B4CF;
-    --grey-blue: #5B7FA1;
-    --brilliant-blue: #365388;
-    --dark-azure: #08427A;
-}
-.search{
-    height: 70px;
-    border-radius: 15px;
-}
-.input-search{
-    width: 730px;
-    background-color: rgba(187, 187, 187, 0.7);
-    color: #605E5E;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@500&family=Roboto:wght@100&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&family=Russo+One&family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Playfair+Display:wght@500&family=Roboto&family=Russo+One&family=Ruthie&display=swap");
+
+:root {
+  --orange: #dc5634;
+  --gray: #bbbbbb;
+  --wild-blue: #a5b4cf;
+  --grey-blue: #5b7fa1;
+  --brilliant-blue: #365388;
+  --dark-azure: #08427a;
 }
 
-.btn-search{
-    width: 305px;
-    background: #DC5634;
-    color: #fff;
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+header {
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.special-text {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+.title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.thin-title {
+  font-family: "Ruthie", cursive;
+}
+
+.subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+
+.search .input-search,
+.search .btn-orange {
+  height: 70px;
+  border-radius: 15px;
+}
+
+.input-search {
+  width: 730px;
+  background-color: rgba(187, 187, 187, 0.7);
+  color: #605e5e;
+}
+
+.search .btn-orange {
+  width: 305px;
+}
+
+.our-courses-block {
+  background: var(--wild-blue);
+  border-radius: 15px;
+}
+
+/* .our-courses-block a{} */
+
+.course {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.pis {
+  background-color: var(--orange);
+}
+
+.pmk {
+  background-color: #8b00ff;
+}
+
+.ad {
+  background-color: var(--dark-azure);
+}
+
+.description-block {
+  background: linear-gradient(180deg,
+      rgba(36, 92, 168, 0.62) 8.85%,
+      rgba(112, 134, 164, 0.730769) 29.63%,
+      rgba(39, 87, 152, 0.384014) 63.02%,
+      rgba(232, 232, 232, 0) 100%);
+}
+
+.text-block {
+  background: rgba(250, 240, 255, 0.3);
+  border: 1px solid #bbbbbb;
+  border-radius: 32px;
+  width: 470px;
+}
+
+.text-block p {
+  color: #362f38;
+}
+
+.text-block:nth-child(odd) {
+  margin-right: 100px;
+}
+
+footer {
+  height: 100px;
+  background: var(--dark-azure);
+  color: #fff;
+}
+
+.rectangle {
+  background: #E8E8E8;
+  width: 1090px;
+  box-shadow: 10px 18px 48px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.personal-info-block {
+  height: 300px;
+  background: #dc5634;
+}
+
+.info-about-user {
+  border: 1px solid #3a425d;
+  border-radius: 15px;
+  width: 500px;
+  height: 250px;
+  background: #fff;
+  color: #000000;
+}
+
+.accessible-courses-block .pis {
+  background: rgba(240, 26, 26, 0.94);
+}
+
+.btn-orange {
+  height: 50px;
+  background: #DC5634;
+  border: 1px solid #605E5E;
+  box-shadow: 10px 18px 48px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+
+.accessible-courses-block .btn-orange {
+  width: 150px;
+}
+
+.label {
+  color: #BBBBBB;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background: var(--brilliant-blue);
+  border-radius: 8px;
+}
+
+.course-name {
+  background: var(--orange);
+  filter: drop-shadow(10px 18px 48px rgba(0, 0, 0, 0.25));
+}
+
+.course-description {
+  background: var(--dark-azure);
+  box-shadow: 10px 18px 48px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.tasks-block .btn-orange,
+.tests-block .btn-orange {
+  width: 500px;
+}
+
+.task-description .btn-orange {
+  width: 200px;
+}
+
+.upload-block .rectangle {
+  background: linear-gradient(0deg, #08427A, #08427A);
+  color: #FFE0E0;
+}
+
+.marks-block span {
+  background: rgba(165, 180, 207, 0.53);
+  border-radius: 7.5px;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+
+.error {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(to top left, powderblue, pink);
+}
+
+.error-code {
+  font-size: 128px;
+  font-weight: 700;
+}
+
+.login-bg {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 100%;
+  background: url(../images/bg-login.jpg);
+}
+
+.login-bg input {
+  width: 300px;
+}
+
+.login-bg a {
+  width: 260px;
+  height: 57px;
+}
+
+.forgot-ques {
+  margin-left: 30px;
+  text-align: left;
+  color: #3A425D;
+  font-stretch: 100;
+  font-weight: 445;
+  font-size: 18px;
+}
+
+.transparent-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 460px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 10px 18px 48px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+}
+
+.blue-bg {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 380px;
+  height: 440px;
+  background: rgba(42, 88, 132, 0.99);
+  border-radius: 54px;
 }
