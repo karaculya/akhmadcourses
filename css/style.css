@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@500&family=Roboto:wght@100&family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&family=Russo+One&display=swap");
@@ -253,4 +254,102 @@ footer {
   height: 440px;
   background: rgba(42, 88, 132, 0.99);
   border-radius: 54px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@500&family=Roboto:wght@100&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&family=Russo+One&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Playfair+Display:wght@500&family=Roboto&family=Russo+One&family=Ruthie&display=swap');
+
+:root{
+    --orange: #DC5634;
+    --gray: #BBBBBB;
+    --wild-blue: #A5B4CF;
+    --grey-blue: #5B7FA1;
+    --brilliant-blue: #365388;
+    --dark-azure: #08427A;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.special-text{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+.title{
+    font-family: 'Russo One', sans-serif;
+    font-size: 32px;
+}
+
+.thin-title{
+    font-family: 'Ruthie', cursive;
+}
+
+.subtitle{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.search{
+    height: 70px;
+    border-radius: 15px;
+}
+.input-search{
+    width: 730px;
+    background-color: rgba(187, 187, 187, 0.7);
+    color: #605E5E;
+}
+
+.btn-search{
+    width: 305px;
+    background: #DC5634;
+    color: #fff;
+}
+
+.our-courses-block{
+    background: var(--wild-blue);
+    border-radius: 15px;
+}
+
+.course {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.pis{
+    background-color: var(--orange);
+}
+
+.pmk{
+    background-color: #8B00FF;
+
+}
+
+.ad{
+    background-color: var(--dark-azure);
+}
+
+.description-block{
+    background: var(--grey-blue);
+}
+
+.text-block{
+    background: var(--brilliant-blue);
+    border-radius: 15px;
+    width: 470px;
+}
+
+.text-block:nth-child(odd){
+    margin-right: 100px;
+}
+
+footer {
+    height: 100px;
+    background: var(--dark-azure);
+    color: #fff;
+>>>>>>> e387273a7d8a2e6e05226ecd67c47c325c2a5b9d
 }
