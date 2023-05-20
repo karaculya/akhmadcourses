@@ -61,44 +61,46 @@
         </section>
 
         <!-- поиск -->
-        <section>
-            <div class="navbar">
-                <div class="container-fluid search">
-                    <form class="d-flex mx-auto p-5" role="search">
-                        <input class="form-control me-1 text-uppercase search input-search" type="search" placeholder="Искать" aria-label="Search">
-                        <button class="btn btn-orange btn-lg text-uppercase" type="submit">
-                            Найти
-                        </button>
-                    </form>
-                </div>
+        <section class="navbar">
+            <div class="container-fluid search">
+                <form class="d-flex mx-auto p-5" role="search">
+                    <input class="form-control me-1 text-uppercase search input-search" type="search"
+                        placeholder="Искать" aria-label="Search">
+                    <button class="btn btn-orange btn-lg text-uppercase" type="submit">
+                        Найти
+                    </button>
+                </form>
             </div>
         </section>
 
         <!-- слайдер с курсами -->
-        <section class="our-courses-block">
+        <section class="our-courses-block gradient">
             <h1 class="text-white text-center p-3 title">Наши курсы</h1>
             <div id="carouselExample" class="carousel slide mb-5 p-5">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="card mx-auto course pis">
-                            <a href="course.html" class="card-body text-white text-center p-4 title">
+                        <a href="course.html" class="card mx-auto w-50 course pis">
+                            <img src="images/account_tree.svg" alt="tree" width="50" class="rounded float-end">
+                            <h4 class="card-body text-white text-center p-2 title">
                                 Проектирование информационных систем
-                            </a>
-                        </div>
+                            </h4>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <div class="card mx-auto course pmk">
-                            <a href="error.html" class="card-body text-white text-center p-4 title">
+                        <a href="error.html" class="card mx-auto w-50 course pmk">
+                            <img src="images/brush.svg" alt="brush" width="50">
+                            <h4 class="card-body text-white text-center p-2 title">
                                 Проектирование мультимедийного контента
-                            </a>
-                        </div>
+                            </h4>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <div class="card mx-auto course ad">
-                            <a href="error.html" class="card-body text-white text-center p-5 title">
+                        <a href="error.html" class="card mx-auto w-50 course ad">
+                            <img src="images/diagram.svg" alt="diagram" width="50">
+                            <h4 href="error.html" class="card-body text-white text-center p-5 title">
                                 Анализ данных
-                            </a>
-                        </div>
+                            </h4>
+                        </a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -115,40 +117,38 @@
         </section>
 
         <!-- блок описания -->
-        <section>
-            <div class="container-fluid overflow-hidden text-center p-3 description-block">
-                <h1 class="title mb-5">Почему выбирают Akhmad Courses</h1>
-                <div class="row gy-5 d-flex justify-content-center">
-                    <div class="col-5 text-block">
-                        <p class="p-3">
-                            Наш сайт предлагает удобную и эффективную платформу для обучения онлайн.
-                            Мы предоставляем доступ к широкому спектру электронных курсов, которые позволяют нашим
-                            пользователям изучать различные предметы и улучшать свои профессиональные навыки.
-                        </p>
-                    </div>
-                    <div class="col-5 text-block">
-                        <p class="p-3">
-                            Мы уверены, что наша платформа может быть полезной для людей, которые хотят улучшить свои
-                            навыки и знания.
-                            Мы создали удобную и эффективную платформу, которая позволяет получать высококачественное
-                            обучение онлайн.
-                        </p>
-                    </div>
-                    <div class="col-5 text-block">
-                        <p class="p-3">
-                            Наши курсы разработаны ведущими специалистами, что гарантирует высокое качество
-                            представленного материала.
-                            Мы предлагаем курсы по многим различным темам. Наши курсы подходят для людей разных
-                            возрастов и уровней профессиональной подготовки.
-                        </p>
-                    </div>
-                    <div class="col-5 text-block">
-                        <p class="p-3">
-                            Мы также предлагаем возможность создания собственных курсов для наших пользователей.
-                            Это позволяет преподавателям и экспертам размещать свои курсы на нашей платформе и делиться
-                            своими знаниями и опытом с другими.
-                        </p>
-                    </div>
+        <section class="container-fluid overflow-hidden text-center p-3 description-block">
+            <h1 class="title mb-5">Почему выбирают Akhmad Courses</h1>
+            <div class="row gy-5 d-flex justify-content-center">
+                <div class="col-5 text-block">
+                    <p class="p-3">
+                        Наш сайт предлагает удобную и эффективную платформу для обучения онлайн.
+                        Мы предоставляем доступ к широкому спектру электронных курсов, которые позволяют нашим
+                        пользователям изучать различные предметы и улучшать свои профессиональные навыки.
+                    </p>
+                </div>
+                <div class="col-5 text-block">
+                    <p class="p-3">
+                        Мы уверены, что наша платформа может быть полезной для людей, которые хотят улучшить свои
+                        навыки и знания.
+                        Мы создали удобную и эффективную платформу, которая позволяет получать высококачественное
+                        обучение онлайн.
+                    </p>
+                </div>
+                <div class="col-5 text-block">
+                    <p class="p-3">
+                        Наши курсы разработаны ведущими специалистами, что гарантирует высокое качество
+                        представленного материала.
+                        Мы предлагаем курсы по многим различным темам. Наши курсы подходят для людей разных
+                        возрастов и уровней профессиональной подготовки.
+                    </p>
+                </div>
+                <div class="col-5 text-block">
+                    <p class="p-3">
+                        Мы также предлагаем возможность создания собственных курсов для наших пользователей.
+                        Это позволяет преподавателям и экспертам размещать свои курсы на нашей платформе и делиться
+                        своими знаниями и опытом с другими.
+                    </p>
                 </div>
             </div>
         </section>
@@ -184,4 +184,5 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

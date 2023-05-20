@@ -35,29 +35,27 @@
         <!-- блок информации о пользователе -->
         <section class="mt-5 mb-5">
             <h1 class="title text-black ms-5 mb-1">Подробная информация о пользователе</h1>
-            <div class="container-fluid overflow-hidden text-start ms-5 rectangle personal-info-block">
-                <div class="row gy-5 d-flex mx-auto my-auto">
-                    <div class="col-5 my-auto info-about-user">
-                        <h4 class="subtitle">ФИО:</h4>
-                        <p>Ахмадуллина Карина Ренатовна</p>
-                        <h4 class="subtitle">Адрес электронной почты:</h4>
-                        <p>karina-akhmadullina@mail.ru</p>
-                        <h4 class="subtitle">Группа (студента):</h4>
-                        <p>БИ31</p>
-                    </div>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="button" class="btn btn-primary text-uppercase">редактировать</button>
-                        <a href="login.html" class="btn btn-light text-uppercase">выйти из учетной записи</a>
-                    </div>
+            <div class="d-flex personal-info-block text-start ms-5">
+                <div class="col-6 info-about-user">
+                    <h4 class="subtitle">ФИО:</h4>
+                    <p>Ахмадуллина Карина Ренатовна</p>
+                    <h4 class="subtitle">Адрес электронной почты:</h4>
+                    <p>karina-akhmadullina@mail.ru</p>
+                    <h4 class="subtitle">Группа (студента):</h4>
+                    <p>БИ31</p>
+                </div>
+                <div class="d-grid gap-2 col-6">
+                    <button type="button" class="btn btn-redact text-uppercase text-white">редактировать</button>
+                    <a href="login.html" class="btn btn-out text-uppercase">выйти из учетной записи</a>
                 </div>
             </div>
         </section>
         <!-- блок доступных курсов -->
         <section class="mb-5">
             <h1 class="title text-black ms-5 mb-1">Доступные курсы</h1>
-            <div class="container-fluid overflow-hidden text-center ms-5 rectangle accessible-courses-block">
+            <div class="container-fluid text-center ms-5 rectangle accessible-courses-block">
                 <div class="row gy-5 d-flex justify-content-center">
-                    <a href="course.html" class="card mx-auto course pis">
+                    <a href="course.html" class="card mx-auto w-50 course pis">
                         <div class="card-body text-white text-center p-4 title">
                             Проектирование информационных систем
                         </div>
@@ -71,7 +69,7 @@
         <!-- блок результатов -->
         <section class="mb-5">
             <h1 class="title text-black ms-5 mb-1">Результаты за пройденные курсы:</h1>
-            <div class="container-fluid overflow-hidden text-center ms-5 rectangle results-block">
+            <div class="container-fluid text-center ms-5 gradient results-block">
                 <div class="row label">
                     <div class="col-6">
                         <p class="text-start text-uppercase">Название курса</p>
@@ -83,37 +81,37 @@
                         <p class="text-start text-uppercase">Результат</p>
                     </div>
                 </div>
-                <div class="row line mb-2">
+                <div class="row line">
                     <div class="col-5">
                         <p class="text-start subtitle">Общая теория систем</p>
                     </div>
                     <div class="col-3">
                         <p class="text-center subtitle">5</p>
                     </div>
-                    <div class="col-4">
-                        <p class="text-start">Результат</p>
+                    <div class="col-4 completion">
+                        <p class="text-start subtitle result"><b>98%</b> выполнения</p>
                     </div>
                 </div>
-                <div class="row line mb-2">
+                <div class="row line">
                     <div class="col-5">
                         <p class="text-start subtitle">Аппаратное обеспечение и телекоммуникации</p>
                     </div>
                     <div class="col-3">
                         <p class="text-center subtitle">4</p>
                     </div>
-                    <div class="col-4">
-                        <p class="text-start">Результат</p>
+                    <div class="col-4 completion">
+                        <p class="text-start subtitle result"><b>79%</b> выполнения</p>
                     </div>
                 </div>
-                <div class="row line mb-2">
+                <div class="row line mb-3">
                     <div class="col-5">
                         <p class="text-start subtitle">Проектирование мультимедийного контента</p>
                     </div>
                     <div class="col-3">
                         <p class="text-center subtitle">4</p>
                     </div>
-                    <div class="col-4">
-                        <p class="text-start">Результат</p>
+                    <div class="col-4 completion">
+                        <p class="text-start subtitle result"><b>65%</b> выполнения</p>
                     </div>
                 </div>
             </div>
