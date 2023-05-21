@@ -1,8 +1,8 @@
 # akhmad-courses
 
-Akhmad-courses is my web design coursework written by me on [bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+Akhmad-courses is my web design coursework written by me on bootstrap 5
 
-I made a [layout in Figma](https://www.figma.com/file/zTYXu91SAl0mVqoaxu8hyh/course-work?type=design&node-id=145%3A816&t=w3N02yIb716zjIF7-1) and I'm trying to repeat it with code
+I made a layout in Figma and I'm trying to repeat it with code
 
 My coursework contains the following files:
 

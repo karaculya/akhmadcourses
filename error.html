@@ -17,16 +17,47 @@
         <header>
             <nav class="navbar sticky-top bg-white g-0">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/open_menu.svg" alt="Logo" width="60" height="60"
+                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button"
+                        aria-controls="offcanvasTop">
+                        <img src="images/open_menu.svg" alt="open" width="60" height="60"
                             class="d-inline-block align-text-top">
                     </a>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                        aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-header">
+                            <nav class="navbar sticky-top w-100 bg-white g-0">
+                                <button type="button" data-bs-dismiss="offcanvas">
+                                    <img src="images/close_menu.svg" alt="close" width="60" height="60"
+                                        class="d-inline-block align-text-top">
+                                </button>
+                                <a class="navbar-brand text-uppercase" href="index.html">
+                                    <img src="images/logo.svg" alt="Logo" width="60" class="col mx-auto d-block">
+                                    <h1 class="col special-text">Akhmad courses</h1>
+                                </a>
+                                <a class="navbar-brand" href="personal-cabinet.html">
+                                    <img src="images/profile.svg" alt="Logo" width="60" height="60"
+                                        class="d-inline-block align-text-top">
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="offcanvas-body text-center">
+                            <a href="index.html">
+                                <h3 class="subtitle">Главная</h3>
+                            </a>
+                            <a href="personal-cabinet.html">
+                                <h3 class="subtitle">Личный кабинет</h3>
+                            </a>
+                            <a href="login.html">
+                                <h3 class="subtitle">Выйти</h3>
+                            </a>
+                        </div>
+                    </div>
                     <a class="navbar-brand text-uppercase" href="index.html">
                         <img src="images/logo.svg" alt="Logo" width="60" class="col mx-auto d-block">
                         <h1 class="col special-text">Akhmad courses</h1>
                     </a>
                     <a class="navbar-brand" href="personal-cabinet.html">
-                        <img src="images/profile.svg" alt="Logo" width="60" height="60"
+                        <img src="images/profile.svg" alt="personal account" width="60" height="60"
                             class="d-inline-block align-text-top">
                     </a>
                 </div>
