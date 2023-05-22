@@ -19,6 +19,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+  min-height: 100vh;
 }
 
 .special-text {
@@ -89,8 +90,12 @@ footer {
   color: #605e5e;
 }
 
+.input-search::placeholder {
+  background: url(../images/search.svg) no-repeat;
+}
+
 .search .btn-orange {
-  max-width: 305px;
+  padding: 1.5%;
 }
 
 .our-courses-block {
@@ -103,11 +108,17 @@ footer {
 }
 
 .course {
+  width: 50%;
+  height: 200px;
   padding: 3%;
   border-radius: 15px;
 }
 
-/* .course img {} */
+.course img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 
 .pis {
   background-color: var(--orange);
@@ -129,12 +140,17 @@ footer {
       rgba(232, 232, 232, 0) 100%);
 }
 
+.causes {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5%;
+}
+
 .text-block {
   background: rgba(250, 240, 255, 0.3);
   border: 1px solid #bbbbbb;
   border-radius: 32px;
-  max-width: 500px;
-  height: 200px;
 }
 
 .text-block p {
@@ -145,12 +161,16 @@ footer {
 
 /* стили для личного кабинета */
 .personal-info-block {
-  justify-content: space-between;
-  background: #dc5634;
   padding: 2%;
   max-width: 1090px;
   box-shadow: 10px 18px 48px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+  background: #dc5634;
+}
+
+.personal-info {
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .info-about-user {
@@ -186,6 +206,7 @@ footer {
 }
 
 .btn-orange {
+  max-width: 305px;
   height: 50px;
   background: #DC5634;
   border: 1px solid #605E5E;
@@ -199,9 +220,9 @@ footer {
 }
 
 .results-block {
-  height: 350px;
   max-width: 1090px;
   border-radius: 15px;
+  padding-bottom: 3%;
 }
 
 .label {
@@ -234,7 +255,7 @@ footer {
   border-bottom: 3px solid #47A526;
 }
 
-.result-yellow{
+.result-yellow {
   border-bottom: 3px solid #F8F03A;
 }
 
@@ -280,16 +301,25 @@ footer {
 
 .tasks-block .btn-orange,
 .tests-block .btn-orange {
-  width: 500px;
+  max-width: 500px;
 }
-
+.task-description{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 .task-description .btn-orange {
-  width: 200px;
+  max-width: 300px;
 }
 
 .upload-block .rectangle {
   background: linear-gradient(0deg, #08427A, #08427A);
   color: #FFE0E0;
+}
+
+.btn-save {
+  background: #FFE0E0;
+  margin: auto;
 }
 
 /* стили для страницы задания */
@@ -319,14 +349,14 @@ footer {
 .error-code {
   font-size: 128px;
   font-weight: 700;
-  animation: changeStoke 6s infinite ease;
+  animation: changeColor 3s infinite;
 }
 
-/* @keyframes changeStoke {
-  0% {border: none;}
-  50% {border: 2px solid #9747FF;}
-  100% {border: 5px solid #9747FF;}
-}  */
+@keyframes changeColor {
+  0% {color: #FFFFFF;}
+  50% {color: #c295fd;}
+  100% {color: #9747FF;}
+} 
 
 /* стили для страницы ошибки */
 
@@ -372,7 +402,18 @@ footer {
 
 /* стили для страницы авторизации */
 
-/* адаптация */
+/* адаптив */
+@media (min-width: 1060px) {
+  .text-block {
+    width: 500px;
+    height: 200px;
+  }
+
+  .results-block {
+    min-height: 350px;
+  }
+}
+
 @media (max-width: 1060px) {
   body {
     font-size: 16px;
@@ -380,6 +421,10 @@ footer {
 
   .title {
     font-size: 24px;
+  }
+
+  .text-block {
+    max-height: 200px;
   }
 
   .marks {
@@ -397,16 +442,52 @@ footer {
     font-size: 12px;
   }
 
+  .subtitle {
+    font-size: 14px;
+  }
+
   footer img {
     width: 30px;
     height: 30px;
   }
+
+  .search .input-search,
+  .search .btn-orange {
+    height: 50px;
+  }
+
+  .results-block {
+    max-height: 350px;
+  }
 }
 
 @media (max-width: 800px) {
+
+  .search .btn-orange,
+  .search .input-search {
+    max-height: 50px;
+  }
+
+  .causes,
+  .our-courses-block {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
   .causes {
     flex-direction: column;
-    margin: 0;
+  }
+
+  .text-block {
+    max-height: 200px;
+  }
+
+  .personal-info {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   footer nav {
@@ -416,6 +497,25 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .course {
+    width: 80%;
+    height: 150px;
+  }
+
+  .course .title {
+    font-size: 16px;
+  }
+
+  .tasks-block .btn-orange,
+  .tests-block .btn-orange {
+    display: block;
+    margin: auto;
+  }
+
+  .task-description{
+    flex-direction: column;
+  }
+
   .icon {
     width: 30px;
     height: 30px;
