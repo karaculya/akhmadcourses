@@ -13,104 +13,119 @@
 </head>
 
 <body>
-    <main class="container-fluid">
-        <header>
-            <nav class="navbar sticky-top bg-white g-0">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/open_menu.svg" alt="open" width="60" height="60"
-                            class="d-inline-block align-text-top icon">
-                    </a>
-                    <a class="navbar-brand text-uppercase" href="index.html">
-                        <img src="images/logo.svg" alt="Logo" width="60" class="col mx-auto d-block">
-                        <h1 class="col special-text">Akhmad courses</h1>
-                    </a>
-                    <a class="navbar-brand" href="personal-cabinet.html">
-                        <img src="images/profile.svg" alt="personal account" width="60" height="60"
-                            class="d-inline-block align-text-top icon">
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <!-- блок названия курса -->
-        <section>
-            <div class="row mx-3 my-5 p-4 course-name">
-                <h1 class="text-white text-center title">Проектирование информационных систем</h1>
-            </div>
-        </section>
-        <!-- блок сроков -->
-        <section class="d-block mx-auto mb-5">
-            <h1 class="thin-title text-black text-center mb-1">Построить концептуальную модель БД</h1>
-            <div class="container-fluid overflow-hidden p-3 rectangle">
-                <div class="row gy-2 d-flex justify-content-start mx-3">
-                    <h3 class="subtitle mx-2">Открыто: <small>Четверг, 30 марта 2023, 00:00</small></h3>
-                    <h3 class="subtitle mx-2">Срок сдачи: <small>Суббота, 15 апреля 2023, 00:00</small></h3>
-                </div>
-            </div>
-        </section>
-        <!-- блок описания задания -->
-        <section class="d-block mx-auto mb-5">
-            <div class="container-fluid p-3 rectangle">
-                <div class="d-flex mx-3 task-description">
-                    <div class="col-9">
-                        <h3 class="subtitle mx-2">Задание:</h3>
-                        <ul>
-                            <li>Построить концептуальную модель БД по теме "Успеваемость учеников в школе".</li>
-                            <li>Постановка задачи и начало построения модели см. в примере.</li>
-                            <li>Строить можно в MS Access или draw.io.</li>
-                            <li>Ответ сдать в виде изображения.</li>
-                        </ul>
+    <header>
+        <nav class="navbar sticky-top bg-white">
+            <div class="container-fluid">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button"
+                    aria-controls="offcanvasTop">
+                    <img src="images/open_menu.svg" alt="open" width="60" height="60"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" data-bs-dismiss="offcanvas">
+                            <img src="images/close_menu.svg" alt="close" width="60" height="60"
+                                class="d-inline-block align-text-top">
+                        </button>
                     </div>
-                    <div class="col-3">
-                        <a href="https://eios.imi-samara.ru/pluginfile.php/140778/mod_assign/introattachment/0/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D0%A3%D1%81%D0%BF%D0%B5%D0%B2%D0%B0%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5.pptx?forcedownload=1"
-                            class="btn btn-orange btn-lg mx-3">Пример</a>
+                    <div class="offcanvas-body d-flex align-items-center justify-content-center flex-column gap-3">
+                        <a href="index.html">
+                            <h3 class="subtitle">Главная</h3>
+                        </a>
+                        <a href="personal-cabinet.html">
+                            <h3 class="subtitle">Личный кабинет</h3>
+                        </a>
+                        <a href="login.html">
+                            <h3 class="subtitle">Выйти</h3>
+                        </a>
                     </div>
                 </div>
+                <a class="navbar-brand text-uppercase" href="index.html">
+                    <img src="images/logo.svg" alt="Logo" width="60" class="col mx-auto d-block">
+                    <h1 class="col special-text">Akhmad courses</h1>
+                </a>
+                <a class="navbar-brand" href="personal-cabinet.html">
+                    <img src="images/profile.svg" alt="personal account" width="60" height="60"
+                        class="d-inline-block align-text-top">
+                </a>
             </div>
-        </section>
-        <!-- блок загрузки -->
-        <section class="upload-block d-block mx-auto mb-5">
-            <div class="container-fluid p-3 rectangle">
-                <div class="row gy-2 d-flex justify-content-start mx-3">
-                    <div class="mb-3">
-                        <label for="formFileSm" class="form-label mb-3 subtitle">Загрузите ответ в виде файла:</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label mb-3 subtitle">Загрузите ответ в виде
-                            текста:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <button class="btn btn-save d-block mt-5 mx-auto" type="submit">Cохранить</button>
-                    </div>
-                </div>
+        </nav>
+    </header>
+    <!-- блок названия курса -->
+    <section>
+        <div class="row mx-3 my-5 p-4 course-name">
+            <h1 class="text-white text-center title">Проектирование информационных систем</h1>
+        </div>
+    </section>
+    <!-- блок сроков -->
+    <section class="d-block mx-auto mb-5">
+        <h1 class="thin-title text-black text-center mb-1">Построить концептуальную модель БД</h1>
+        <div class="container-fluid overflow-hidden p-3 rectangle">
+            <div class="d-flex flex-column justify-content-start gy-2 mx-3">
+                <h3 class="subtitle mx-2">Открыто: <small>Четверг, 30 марта 2023, 00:00</small></h3>
+                <h3 class="subtitle mx-2">Срок сдачи: <small>Суббота, 15 апреля 2023, 00:00</small></h3>
             </div>
-        </section>
-        <footer>
-            <nav class="navbar sticky-bottom justify-content-center">
-                <div class="container-fluid">
-                    <div class="p-3">© Akhmad Courses, 2023</div>
-                    <div class="p-3">г.Самара, ул. Аксакова, 21</div>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="tel:88462664000">
-                                <img src="images/phone.svg" width="50" height="50" alt="phone" class="icon">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="mailto:imi@imi-samara.ru">
-                                <img src="images/email.svg" width="50" height="50" alt="email" class="icon">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://t.me/kryaccan">
-                                <img src="images/telegram.svg" width="50" height="50" alt="telegram" class="icon">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </footer>
-    </main>
+        </div>
+    </section>
+    <!-- блок описания задания -->
+    <section class="container-fluid d-block rectangle mx-auto p-3 mb-5">
+        <div class="d-flex task-description">
+            <div>
+                <h3 class="subtitle mx-2">Задание:</h3>
+                <ul>
+                    <li>Построить концептуальную модель БД по теме "Успеваемость учеников в школе".</li>
+                    <li>Постановка задачи и начало построения модели см. в примере.</li>
+                    <li>Строить можно в MS Access или draw.io.</li>
+                    <li>Ответ сдать в виде изображения.</li>
+                </ul>
+            </div>
+            <div>
+                <a href="error.html" class="btn btn-orange btn-lg mx-3">Пример</a>
+            </div>
+        </div>
+    </section>
+    <!-- блок загрузки -->
+    <section class="upload-block d-block mx-auto mb-5">
+        <div class="container-fluid p-3 rectangle">
+            <div class="row gy-2 d-flex justify-content-start mx-3">
+                <form class="mb-3">
+                    <label for="formFileSm" class="form-label mb-3 subtitle">Загрузите ответ в виде файла:</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    <label for="exampleFormControlTextarea1" class="form-label my-3 subtitle">Загрузите ответ в виде
+                        текста:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Введите ответ"
+                        rows="3"></textarea>
+                    <button class="btn btn-save d-block mt-4 mx-auto" type="reset">Cохранить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav class="navbar sticky-bottom justify-content-center">
+            <div class="container-fluid">
+                <div class="p-3">© Akhmad Courses, 2023</div>
+                <div class="p-3">г.Самара, ул. Аксакова, 21</div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="tel:88462664000">
+                            <img src="images/phone.svg" width="50" height="50" alt="phone" class="icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="mailto:imi@imi-samara.ru">
+                            <img src="images/email.svg" width="50" height="50" alt="email" class="icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://t.me/kryaccan">
+                            <img src="images/telegram.svg" width="50" height="50" alt="telegram" class="icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

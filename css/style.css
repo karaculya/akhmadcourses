@@ -20,6 +20,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .special-text {
@@ -47,6 +48,15 @@ body {
 
 header {
   box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.offcanvas.offcanvas-top {
+  height: 100vh;
+}
+
+.offcanvas-body a {
+  text-decoration: none;
+  color: #000000;
 }
 
 footer {
@@ -90,8 +100,10 @@ footer {
   color: #605e5e;
 }
 
-.input-search::placeholder {
-  background: url(../images/search.svg) no-repeat;
+.input-search::placeholder::after {
+  content: '';
+  background-image: url(../images/search.svg) no-repeat;
+  background-size: 20px;
 }
 
 .search .btn-orange {
@@ -108,9 +120,12 @@ footer {
 }
 
 .course {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
   height: 200px;
-  padding: 3%;
+  padding: 5%;
   border-radius: 15px;
 }
 
@@ -121,15 +136,33 @@ footer {
 }
 
 .pis {
-  background-color: var(--orange);
+  background: var(--orange);
+  background-image: radial-gradient(white 30%, transparent 0);
+  background-size: 15px 15px;
+}
+
+.pis .title {
+  background: var(--orange);
 }
 
 .pmk {
-  background-color: #8b00ff;
+  background: #8b00ff;
+  background-image: radial-gradient(white 30%, transparent 0);
+  background-size: 15px 15px;
+}
+
+.pmk .title {
+  background: #8b00ff;
 }
 
 .ad {
-  background-color: var(--dark-azure);
+  background: var(--dark-azure);
+  background-image: radial-gradient(white 30%, transparent 0);
+  background-size: 15px 15px;
+}
+
+.ad .title {
+  background: var(--dark-azure);
 }
 
 .description-block {
@@ -202,6 +235,12 @@ footer {
 }
 
 .accessible-courses-block .pis {
+  background: rgba(240, 26, 26, 0.94);
+  background-image: radial-gradient(white 30%, transparent 0);
+  background-size: 15px 15px;
+}
+
+.accessible-courses-block .pis .title {
   background: rgba(240, 26, 26, 0.94);
 }
 
@@ -303,23 +342,30 @@ footer {
 .tests-block .btn-orange {
   max-width: 500px;
 }
-.task-description{
+
+.task-description {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+
 .task-description .btn-orange {
   max-width: 300px;
 }
 
 .upload-block .rectangle {
+  flex-direction: column;
   background: linear-gradient(0deg, #08427A, #08427A);
   color: #FFE0E0;
 }
 
+/* .upload-block textarea::placeholder{
+  background: url(../images/upload_file.svg) no-repeat left;
+  font-size: 30px;
+} */
+
 .btn-save {
   background: #FFE0E0;
-  margin: auto;
 }
 
 /* стили для страницы задания */
@@ -343,20 +389,29 @@ footer {
 
 /* стили для страницы ошибки */
 .error {
-  padding-bottom: 50px;
+  padding-bottom: 5%;
+  min-height: 100vh;
 }
 
 .error-code {
   font-size: 128px;
   font-weight: 700;
-  animation: changeColor 3s infinite;
+  animation: changeColor 0.6s infinite;
 }
 
 @keyframes changeColor {
-  0% {color: #FFFFFF;}
-  50% {color: #c295fd;}
-  100% {color: #9747FF;}
-} 
+  0% {
+    color: #FFFFFF;
+  }
+
+  50% {
+    color: #c295fd;
+  }
+
+  100% {
+    color: #9747FF;
+  }
+}
 
 /* стили для страницы ошибки */
 
@@ -365,6 +420,8 @@ footer {
   padding-top: 1.5%;
   padding-bottom: 2%;
   background: url(../images/bg-login.jpg);
+  min-height: 100vh;
+  width: 100%;
 }
 
 .login-bg input {
@@ -377,7 +434,7 @@ footer {
 }
 
 .forgot-ques {
-  margin-left: 30px;
+  margin-left: 40px;
   text-align: left;
   color: #3A425D;
   font-stretch: 100;
@@ -386,6 +443,7 @@ footer {
 }
 
 .transparent-bg {
+  position: relative;
   width: 450px;
   height: 460px;
   background: rgba(255, 255, 255, 0.2);
@@ -394,6 +452,9 @@ footer {
 }
 
 .blue-bg {
+  position: absolute;
+  top: 50%;
+  transform: translate(10%, -50%);
   width: 380px;
   height: 440px;
   background: rgba(42, 88, 132, 0.99);
@@ -426,15 +487,6 @@ footer {
   .text-block {
     max-height: 200px;
   }
-
-  .marks {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mark-type {
-    margin-bottom: 2%;
-  }
 }
 
 @media (max-width: 900px) {
@@ -458,6 +510,14 @@ footer {
 
   .results-block {
     max-height: 350px;
+  }
+
+  .marks {
+    flex-direction: column;
+  }
+
+  .mark-type {
+    margin-bottom: 2%;
   }
 }
 
@@ -489,14 +549,29 @@ footer {
     flex-direction: column;
     gap: 2rem;
   }
-
-  footer nav {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 500px) {
+  /* .error .special-text {
+    font-size: 128px;
+    font-weight: 700;
+  } */
+
+  footer .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .special-text {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
   .course {
     width: 80%;
     height: 150px;
@@ -510,14 +585,36 @@ footer {
   .tests-block .btn-orange {
     display: block;
     margin: auto;
+    min-height: 100px;
   }
 
-  .task-description{
+  .task-description {
     flex-direction: column;
   }
 
-  .icon {
-    width: 30px;
-    height: 30px;
+  .transparent-bg {
+    width: 80%;
+    max-height: 410px;
+  }
+
+  .blue-bg {
+    transform: translate(15%, -50%);
+    width: 80%;
+    max-height: 370px;
+  }
+
+  .blue-bg input {
+    width: 80%;
+  }
+
+  .forgot-ques {
+    text-align: center;
+    margin: 20%;
+    font-size: 12px;
+  }
+
+  .login-bg .btn-orange{
+    width: 70%;
+    height: 40px;
   }
 }
