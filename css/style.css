@@ -85,13 +85,6 @@ footer {
 /* общие стили */
 
 /* стили для главной страницы */
-.search,
-.causes,
-.our-courses-block {
-  margin-left: 8%;
-  margin-right: 8%;
-}
-
 .search .input-search,
 .search .btn-orange {
   display: flex;
@@ -134,12 +127,20 @@ footer {
 }
 
 .our-courses-block {
+  display: block;
+  margin: auto;
+  max-width: 1090px;
   border-radius: 15px;
 }
 
 .our-courses-block a,
 .accessible-courses-block a {
   text-decoration: none;
+}
+
+.accessible-courses-block .rectangle {
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 .course {
@@ -199,8 +200,8 @@ footer {
 .causes {
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  gap: 5%;
+  justify-content: center;
+  gap: 50px;
 }
 
 .text-block {
@@ -381,11 +382,6 @@ footer {
   color: #FFE0E0;
 }
 
-/* .upload-block textarea::placeholder{
-  background: url(../images/upload_file.svg) no-repeat left;
-  font-size: 30px;
-} */
-
 .btn-save {
   background: #FFE0E0;
 }
@@ -550,8 +546,7 @@ footer {
     max-height: 50px;
   }
 
-  .causes,
-  .our-courses-block {
+  .causes {
     margin-left: 2%;
     margin-right: 2%;
   }
